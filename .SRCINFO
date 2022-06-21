@@ -1,0 +1,18 @@
+pkgbase = libpam_stackpass
+	pkgdesc = A simple C library to get or put passwords from/to PAM stack.
+	pkgver = 0.1.0
+	pkgrel = 1
+	url = https://github.com/evgfilim1/pam_stackpass
+	arch = x86_64
+	arch = i686
+	arch = pentium4
+	arch = arm
+	arch = armv6h
+	arch = armv7h
+	arch = aarch64
+	makedepends = cmake
+	depends = pam
+	source = https://github.com/evgfilim1/pam_stackpass/archive/refs/tags/0.1.0.tar.gz
+	md5sums = 3f23ba5062827e130c24d83eba451ba0
+
+pkgname = libpam_stackpass

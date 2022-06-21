@@ -11,11 +11,21 @@ to be able to enter either OTP or my linux user password.
 - cmake
 - pam
 
+### Arch Linux
+
+```shell
+mkdir pam_stackpass && cd pam_stackpass
+wget "https://github.com/evgfilim1/pam_stackpass/raw/master/PKGBUILD"
+makepkg -si
+```
+
+### Other Linux
+
 ```shell
 git clone https://github.com/evgfilim1/pam_stackpass
 cd pam_stackpass
 mkdir build && cd build
-cmake -DCMAKE_INSTALL_PREFIX=/usr .. && make && sudo make install
+cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release .. && make && sudo make install
 ```
 
 ## Usage
